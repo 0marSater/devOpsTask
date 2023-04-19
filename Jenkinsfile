@@ -1,8 +1,9 @@
-  environment{
-    IMAGE_NAME = "flask:v-1.0.0"
-  }
+
 pipeline {
   agent any
+   environment{
+    IMAGE_NAME = "flask:v-1.0.0"
+   }
     stages {
         stage("Build image") {
             steps{
