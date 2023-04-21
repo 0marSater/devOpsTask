@@ -1,7 +1,7 @@
 
 def ecrLogin(){
 
-    withCredentials([awsAccessKey(credentialsId: 'your-aws-creds-id', variable: 'AWS_ACCESS_KEY_ID'),
+    withCredentials([awsAccessKey(credentialsId: 'ECR-KEY', variable: 'AWS_ACCESS_KEY_ID'),
         awsSecretKey(credentialsId: 'ECR-KEY', variable: 'AWS_SECRET_ACCESS_KEY')]) {
         sh 'aws ecr get-login-password --region eu-west-3 | docker login --username AWS --password-stdin 815919245801.dkr.ecr.eu-west-3.amazonaws.com'
     }
