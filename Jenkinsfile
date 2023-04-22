@@ -27,10 +27,8 @@ pipeline {
             steps{
                 script{
                     echo "Log in to ecr ..."
-                    docker.withRegistry('https://815919245801.dkr.ecr.eu-west-3.amazonaws.com/flask-app', 'ecr:eu-west-3:aws-ecr-credentials'){
-
-                    }
-
+                    def file = load "push.groovy"
+                    file.pushImage()
                 }
             }
         }
