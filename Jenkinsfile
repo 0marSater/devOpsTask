@@ -4,8 +4,8 @@ pipeline {
    environment{
     IMAGE_NAME = "flask:v-1.0.0"
     REPO_NAME = "815919245801.dkr.ecr.eu-west-3.amazonaws.com/flask-app"
-
    }
+
     stages {
         stage('Clone repository') {
             steps {
@@ -26,7 +26,6 @@ pipeline {
         stage("Push to ECR") {
             steps{
                 script{
-                    echo "Log in to ecr ..."
                     def file = load "push.groovy"
                     file.pushImage()
                 }
