@@ -7,7 +7,7 @@ The assignment is divided into three parts:
 1) Create EKS, ECR, RDS with terraform
       --will be updated alter--
 
-2) Create a web app and a pipline for building, pushing app on private ECR:
+2) Create a web app and its pipeline for building, pushing app on private ECR:
 	a. Two Apis :
   		 1) (http//hostname//client-ip) 
   		      -> it takes the client request public ip and saves it to RDS which has one table called ip_addresses with two columns (id, ip_address).
