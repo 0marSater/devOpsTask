@@ -21,7 +21,7 @@ The assignment is divided into three parts:
 	
 3) Create helm chart that will allow deploying the app with its appropriate k8s resources.
 		-> "taskchart" folder.
-=====================================================================================================================================
+
 
 
 
@@ -31,23 +31,23 @@ Some notes you should consider on  point 2
 - CREATE IAM user that has the right permission to access to ECR.
 - Create an (AWS_ACCESS_KEY_ID and AWS_SECRET_KEY_ID) for that user, and add them to jenkins credentials.
 
-=====================================================================================================================================
+
 
 
 Some notes you should consider on point 3
 --------------------------------------------
 In case of creating EKS and deploy helm cahrt on it, first
 	1 - Create an IAM group with following permissions:
-		. AmazonEKSClusterPolicy
-		. AmazonEKSWorkerNodePolicy
-		. AmazonEC2ContainerRegistryReadOnly
-		. AmazonEKS_CNI_Policy
-		. AmazonElasticContainerRegistryPublicReadOnly
-		. EC2InstanceProfileForImageBuilderECRContainerBuilds
-		. AmazonElasticContainerRegistryPublicFullAccess
-		. AWSAppRunnerServicePolicyForECRAccess
-		. AmazonElasticContainerRegistryPublicPowerUser
-		. SecretsManagerReadWrite
+		a. AmazonEKSClusterPolicy
+		b. AmazonEKSWorkerNodePolicy
+		c. AmazonEC2ContainerRegistryReadOnly
+		d. AmazonEKS_CNI_Policy
+		e. AmazonElasticContainerRegistryPublicReadOnly
+		f. EC2InstanceProfileForImageBuilderECRContainerBuilds
+		g. AmazonElasticContainerRegistryPublicFullAccess
+		h. AWSAppRunnerServicePolicyForECRAccess
+		k. AmazonElasticContainerRegistryPublicPowerUser
+		l. SecretsManagerReadWrite
 	1 - Create an IAM user (AWS_ACCESS_KEY_ID and AWS_SECRET_KEY_ID will be provided) and add the user to the IAM Group created above. 
 	2 - Create EKS role with permission (AmazonEKSClusterPolicy, AmazonEKSVPCResourceController) and its node group.
 	3 - Create EC2 role (for node groups) + 3 polcies attach (AmazonEKSWorkerNodePolicy, AmazonEKS_CNI_Policy, AmazonEC2ContainerRegistryReadOnly)
