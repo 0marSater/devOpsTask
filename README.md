@@ -9,9 +9,9 @@ The assignment is divided into three parts:
 
 2) Create a web app and a pipline for building, pushing app on private ECR:
 	a. Two Apis :
-  		 1 - (http//hostname//client-ip) 
+  		 1) (http//hostname//client-ip) 
   		      -> it takes the client request public ip and saves it to RDS which has one table called ip_addresses with two columns (id, ip_address).
- 		  2 - (http//hostname//client-ip//list)
+ 		 2) (http//hostname//client-ip//list)
    			-> it shows the list of IPs that triggred the link.
 
 	b. building docker image 
