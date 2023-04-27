@@ -11,8 +11,7 @@ The assignment is divided into three parts:
 - Two Apis :
  - `http//hostname/client-ip`
       it takes the client request public ip and saves it to RDS.
- ,`http//hostname/client-ip/list`
-     > it shows the list of IPs that triggred the link.
+ ,`http//hostname/client-ip/list` it shows the list of IPs that triggred the link.
 
 - Building docker image 
 
