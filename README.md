@@ -55,8 +55,8 @@ In case of creating EKS and deploy helm chart on it, first:
 5) Create EKS node group role with policies (__AmazonEKSWorkerNodePolicy__, __AmazonEC2ContainerRegistryReadOnly__, __AmazonEKS_CNI_Policy__)
 6) Create node group (EKS-Workers) and attach the pervious node to it.
 7) After creating a vpc for The EKS, make sure you tag the two public subsnet with `kubernetes.io/role/elb `and value `1 ` or follow the instruction here [Resolve the single subnet discovery error](https://repost.aws/knowledge-center/eks-load-balancer-controller-subnets)
-8) Create ODIC for EKS cluster and by following the instruction here: https://docs.aws.amazon.com/eks/latest/userguide/enable-iam-roles-for-service-accounts.html
-9) Create AWS load balancer controller by following the instruction here: https://docs.aws.amazon.com/eks/latest/userguide/aws-load-balancer-controller.html
+8) Create ODIC for EKS cluster and by following the instruction here [Creating an IAM OIDC provider for your cluster](https://docs.aws.amazon.com/eks/latest/userguide/enable-iam-roles-for-service-accounts.html)
+9) Create AWS load balancer controller by following the instruction here [Installing the AWS Load Balancer Controller add-on] (https://docs.aws.amazon.com/eks/latest/userguide/aws-load-balancer-controller.html)
 	-> that inculde:
 		- create loadbalancer-controller-policy.
 		- create loadbalancer-controller-role and attach the pervious policy to it.
