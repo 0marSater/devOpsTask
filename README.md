@@ -25,7 +25,7 @@ The assignment is divided into three parts:
 
 
 
-Some notes you should consider on  point 2
+Some notes you should consider on point 2
 --------------------------------------------
 - Make sure you installed AWS ECR plugins for Jenkins.
 - CREATE IAM user that has the right permission to access to ECR.
@@ -36,7 +36,7 @@ Some notes you should consider on  point 2
 
 Some notes you should consider on point 3
 --------------------------------------------
-In case of creating EKS and deploy helm cahrt on it, first
+In case of creating EKS and deploy helm chart on it, first:
 1) Create an IAM group with following permissions:
 - AmazonEKSClusterPolicy
 - AmazonEKSWorkerNodePolicy
@@ -57,5 +57,5 @@ In case of creating EKS and deploy helm cahrt on it, first
 	-> that inculde:
 		- create loadbalancer-controller-policy.
 		- create loadbalancer-controller-role and attach the pervious policy to it.
-8) finally, install helm chart that contain the resource to deploy app.
+8) Finally, install helm chart that contain the resource to deploy app.
 		
