@@ -57,9 +57,9 @@ In case of creating EKS and deploy helm chart on it, first:
 7) After creating a vpc for The EKS, make sure you tag the two public subsnet with `kubernetes.io/role/elb `and value `1 ` or follow the instruction here [Resolve the single subnet discovery error](https://repost.aws/knowledge-center/eks-load-balancer-controller-subnets)
 8) Create ODIC for EKS cluster and by following the instruction here [Creating an IAM OIDC provider for your cluster](https://docs.aws.amazon.com/eks/latest/userguide/enable-iam-roles-for-service-accounts.html)
 9) Create AWS load balancer controller by following the instruction here [Installing the AWS Load Balancer Controller add-on](https://docs.aws.amazon.com/eks/latest/userguide/aws-load-balancer-controller.html)
-	-> that inculde:
-		- create loadbalancer-controller-policy.
-		- create loadbalancer-controller-role and attach the pervious policy to it.
+> that inculde:
+- create loadbalancer-controller-policy.
+- create loadbalancer-controller-role and attach the pervious policy to it.
 10) Finally, install helm chart that contains the resource to deploy app.
 
 helpful command you will use 
