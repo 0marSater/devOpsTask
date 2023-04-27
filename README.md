@@ -8,6 +8,7 @@ The assignment is divided into three parts:
       --will be updated alter--
 
 2) Create a web app that contain:
-   Two Apis 
-      1 - one called (http//hostname//client-ip) 
-             -> it takes the client request public ip and saves it to RDS: 
+   Two Apis :
+   1 - one called (http//hostname//client-ip) 
+         -> it takes the client request public ip and saves it to RDS: 
+		 
