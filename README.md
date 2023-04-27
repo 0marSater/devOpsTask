@@ -36,18 +36,18 @@ Some notes you should consider on  point 2
 
 Some notes you should consider on point 3
 --------------------------------------------
-In case of creating EKS and deploy helm cahrt on it, first
+- In case of creating EKS and deploy helm cahrt on it, first
 1 - Create an IAM group with following permissions:
-a. AmazonEKSClusterPolicy
-b. AmazonEKSWorkerNodePolicy
-c. AmazonEC2ContainerRegistryReadOnly
-d. AmazonEKS_CNI_Policy
-e. AmazonElasticContainerRegistryPublicReadOnly
-f. EC2InstanceProfileForImageBuilderECRContainerBuilds
-g. AmazonElasticContainerRegistryPublicFullAccess
-h. AWSAppRunnerServicePolicyForECRAccess
-k. AmazonElasticContainerRegistryPublicPowerUser
-l. SecretsManagerReadWrite
+- AmazonEKSClusterPolicy
+- AmazonEKSWorkerNodePolicy
+- AmazonEC2ContainerRegistryReadOnly
+- AmazonEKS_CNI_Policy
+- AmazonElasticContainerRegistryPublicReadOnly
+- EC2InstanceProfileForImageBuilderECRContainerBuilds
+- AmazonElasticContainerRegistryPublicFullAccess
+- AWSAppRunnerServicePolicyForECRAccess
+- AmazonElasticContainerRegistryPublicPowerUser
+- SecretsManagerReadWrite
 	1 - Create an IAM user (AWS_ACCESS_KEY_ID and AWS_SECRET_KEY_ID will be provided) and add the user to the IAM Group created above. 
 	2 - Create EKS role with permission (AmazonEKSClusterPolicy, AmazonEKSVPCResourceController) and its node group.
 	3 - Create EC2 role (for node groups) + 3 polcies attach (AmazonEKSWorkerNodePolicy, AmazonEKS_CNI_Policy, AmazonEC2ContainerRegistryReadOnly)
