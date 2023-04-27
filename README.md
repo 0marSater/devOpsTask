@@ -49,13 +49,14 @@ In case of creating EKS and deploy helm chart on it, first:
 - AmazonElasticContainerRegistryPublicPowerUser
 - SecretsManagerReadWrite
 2) Create an IAM user (AWS_ACCESS_KEY_ID and AWS_SECRET_KEY_ID will be provided) and add the user to the IAM Group created above. 
-3) Create EKS role with permission (AmazonEKSClusterPolicy, AmazonEKSVPCResourceController) and its node group.
-4) Create EC2 role (for node groups) + 3 polcies attach (AmazonEKSWorkerNodePolicy, AmazonEKS_CNI_Policy, AmazonEC2ContainerRegistryReadOnly)
-5) After creating a vpc for The EKS, make sure you tag the two public subsnet (btw clsuter need at least two subnet) with tag kubernetes.io/role/elb and valyu 1 or follow the instruction here: https://repost.aws/knowledge-center/eks-load-balancer-controller-subnets
-6) Create ODIC for EKS cluster and by following the instruction here: https://docs.aws.amazon.com/eks/latest/userguide/enable-iam-roles-for-service-accounts.html
-7) Create AWS load balancer controller by following the instruction here: https://docs.aws.amazon.com/eks/latest/userguide/aws-load-balancer-controller.html
+3) Create with pervious account the EKS infrastructure (VPC, subnets, security group).
+4) Create EKS role with policies (AmazonEKSClusterPolicy, AmazonEKSVPCResourceController).
+5) Create EKS node group role with policies (AmazonEKSWorkerNodePolicy, AmazonEC2ContainerRegistryReadOnly, AmazonEKS_CNI_Policy)
+6) After creating a vpc for The EKS, make sure you tag the two public subsnet with kubernetes.io/role/elb and value 1 or follow the instruction here: https://repost.aws/knowledge-center/eks-load-balancer-controller-subnets
+7) Create ODIC for EKS cluster and by following the instruction here: https://docs.aws.amazon.com/eks/latest/userguide/enable-iam-roles-for-service-accounts.html
+8) Create AWS load balancer controller by following the instruction here: https://docs.aws.amazon.com/eks/latest/userguide/aws-load-balancer-controller.html
 	-> that inculde:
 		- create loadbalancer-controller-policy.
 		- create loadbalancer-controller-role and attach the pervious policy to it.
-8) Finally, install helm chart that contain the resource to deploy app.
+9) Finally, install helm chart that contains the resource to deploy app.
 		
