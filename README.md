@@ -10,7 +10,7 @@ The assignment is divided into three parts:
 2) Create a simple web app and its pipeline for building, pushing app on private ECR:
 - Two Apis :
  - `http//hostname/client-ip`
-      it takes the client request public ip and saves it to RDS.
+      it takes the client request public ip and saves it to RDS
  ,`http//hostname/client-ip/list` it shows the list of IPs that triggred the link.
 
 - Building docker image 
@@ -18,7 +18,7 @@ The assignment is divided into three parts:
 - Pushing and automate docker iamge to ECR with script (in my case i did with external groovy script) 
 		-> "__build.groovy__" and "__push.groovy__".
 	
-3) Create helm chart that will allow deploying the app with its appropriate k8s resources.
+3) Create helm chart that will allow deploying the app with its appropriate k8s resources on __AWS EKS__.
 		-> "__taskchart__" folder.
 
 
