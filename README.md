@@ -9,7 +9,8 @@ The assignment is divided into three parts:
 
 2) Create a simple web app and its pipeline for building, pushing app on private ECR:
 - Two Apis :
-(a) (http//hostname/client-ip) 
+(a) 
+> (http//hostname/client-ip) 
      > it takes the client request public ip and saves it to RDS.
 (B) (http//hostname/client-ip/list)
      > it shows the list of IPs that triggred the link.
@@ -53,7 +54,7 @@ In case of creating EKS and deploy helm chart on it, first:
 4) Create EKS role with policies (__AmazonEKSClusterPolicy__, __AmazonEKSVPCResourceController__).
 5) Create EKS node group role with policies (__AmazonEKSWorkerNodePolicy__, __AmazonEC2ContainerRegistryReadOnly__, __AmazonEKS_CNI_Policy__)
 6) Create node group (EKS-Workers) and attach the pervious node to it.
-7) After creating a vpc for The EKS, make sure you tag the two public subsnet with `__kubernetes.io/role/elb__ `and value `__1__ `or follow the instruction here: https://repost.aws/knowledge-center/eks-load-balancer-controller-subnets
+7) After creating a vpc for The EKS, make sure you tag the two public subsnet with `kubernetes.io/role/elb `and value `1 ` or follow the instruction here: https://repost.aws/knowledge-center/eks-load-balancer-controller-subnets
 8) Create ODIC for EKS cluster and by following the instruction here: https://docs.aws.amazon.com/eks/latest/userguide/enable-iam-roles-for-service-accounts.html
 9) Create AWS load balancer controller by following the instruction here: https://docs.aws.amazon.com/eks/latest/userguide/aws-load-balancer-controller.html
 	-> that inculde:
@@ -63,9 +64,9 @@ In case of creating EKS and deploy helm chart on it, first:
 
 helpful command you will use 
 -----------------------------
-- `__AWS congiure__`: remotly connect to ur aws account with AWS_ACCESS_KEY_ID, AWS_SECRET_KEY_ID, and region
-- `__aws eks update-kubeconfig --region <region-name> --name <cluster-name>__`: Update your kubeconfig file to include the credentials for your IAM user.
-- `__kubectl config use-context <cluster-name>__`: to point the kube to ur EKS cluster on AWS.
+- `AWS congiure`: remotly connect to ur aws account with AWS_ACCESS_KEY_ID, AWS_SECRET_KEY_ID, and region
+- `aws eks update-kubeconfig --region <region-name> --name <cluster-name>`: Update your kubeconfig file to include the credentials for your IAM user.
+- `kubectl config use-context <cluster-name>`: to point the kube to ur EKS cluster on AWS.
 
 	
 	
