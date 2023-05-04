@@ -1,36 +1,36 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: task-deployment
+  name: {{ .Values.appName }}
   labels:
-    app: devops-task
+    app: {{ .Values.appName }}
 spec:
-  replicas: 1
+  replicas: {{ .Values.replicaCount }}
   selector:
     matchLabels:
-      app: devops-task
+      app: {{ .Values.appName }}
   template:
     metadata:
       labels:
-        app: devops-task
+        app: {{ .Values.appName }}
     spec:
       containers:
-      - name: devops-task
-        image: 815919245801.dkr.ecr.eu-west-3.amazonaws.com/flask-app:latest
-        imagePullPolicy: IfNotPresent 
+      - name: {{ .Values.appName }}
+        image: {{ .Values.image.repo }}
+        imagePullPolicy: {{ .Values.image.imagePullPolicy }}
         ports:
-        - containerPort: 5000
+        - containerPort: {{ .Values.image.ports.containerPort }}
        
 ---
 apiVersion: v1
 kind: Service
 metadata:
-  name: task-service
+  name: {{ .Values.Service.serviceName }}
 spec: 
   type: NodePort
   selector:
-    app: devops-task
+    app: {{ .Values.appName }}
   ports:
-    - protocol: TCP
-      port: 5000
-      targetPort: 5000
+    - protocol: {{ .Values.Service.ports.protocol }}
+      port: {{ .Values.Service.ports.port }}
+      targetPort: {{ .Values.image.ports.containerPort }}
