@@ -5,7 +5,7 @@ WORKDIR /app
 
 COPY . /app
 
-#install the depe
+#Install the dependency 
 RUN pip install -r requirements.txt
 
 # Expose the port that the application will listen on
