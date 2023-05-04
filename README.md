@@ -1,5 +1,5 @@
 # devOpsTask
-This is project as a part of devops assignment that test my knowledge in most devops topics and daily tasks.
+This project consider as a part of devops assignment that test my knowledge in most devops topics and daily tasks.
 
 The assignment is divided into three parts:
 -------------------------------------------
