@@ -1,6 +1,6 @@
 def pushImage(){
     echo "Login to ecr ..."
-    // replace <account-id> with your account id, and <database-name> with your ECR name.
+    // replace <account-id> with your account id, and <ECR-name> with your ECR name.
     docker.withRegistry('https://<account-id>.dkr.ecr.<region-code>.amazonaws.com/<ECR-name>',
                             'ecr:<region-code>:<aws-credentials>'){
 
