@@ -60,7 +60,7 @@ In case of creating EKS and deploy helm chart on it, first:
 - create loadbalancer-controller-role and attach the pervious policy to it.
 10) Finally, install helm chart that contains the resource to deploy app.
 
-helpful command you will use 
+helpful commands you will use 
 -----------------------------
 - `AWS congiure`: remotly connect to ur aws account with AWS_ACCESS_KEY_ID, AWS_SECRET_KEY_ID, and region
 - `aws eks update-kubeconfig --region <region-name> --name <cluster-name>`: Update your kubeconfig file to include the credentials for your IAM user.
