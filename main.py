@@ -10,7 +10,7 @@ config = {
     'user': 'admin',
     'password': '321657aa',
     'host': 'task-db.c6fja1dax0aa.eu-west-2.rds.amazonaws.com',
-    'database': 'ipAdresses'
+    'database': 'ip_addresses'
 }
 
 conn = mysql.connector.connect(**config)
