@@ -6,7 +6,7 @@ replicaCount: 1
 
 #Image info
 image:
-  repo: 815919245801.dkr.ecr.eu-west-2.amazonaws.com/myapp-repo
+  repo: 815919245801.dkr.ecr.eu-west-2.amazonaws.com/task-repo
   tag: latest
   imagePullPolicy: IfNotPresent
   ports:
