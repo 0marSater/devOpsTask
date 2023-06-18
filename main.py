@@ -7,10 +7,10 @@ app = Flask(__name__)
 # Connect to the RDS MySQL database
 # Suppose you export ur environment either on Windows os or Linux.
 config = {
-    'user': os.environ['DB_USER'],
-    'password': os.environ['DB_PASSWORD'],
-    'host': os.environ['DB_HOST'],
-    'database': os.environ['DB_DATABASE']
+    'user': 'admin',
+    'password': '321657aa',
+    'host': 'task-db.c6fja1dax0aa.eu-west-2.rds.amazonaws.com',
+    'database': 'ipAdresses'
 }
 
 conn = mysql.connector.connect(**config)
@@ -27,19 +27,17 @@ cur.execute('''
 
 @app.route('/', methods=['GET'])
 def land_page():
-    return jsonify("Hello! ")
+    return jsonify("Hello!")
 
 
 @app.route('/client-ip', methods=['GET'])
 def save_client_ip():
     # get the client IP address from the request
     client_ip_address = request.remote_addr
-
     # insert the IP address into database
     cur.execute('INSERT INTO ip_addresses (ip_address) VALUES (%s)', (client_ip_address,))
     conn.commit()
-
-    return jsonify("IP address added")
+    return jsonify("Your ip address added")
 
 
 @app.route('/client-ip/list', methods=['GET'])

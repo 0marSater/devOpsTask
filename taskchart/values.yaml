@@ -6,7 +6,7 @@ replicaCount: 1
 
 #Image info
 image:
-  repo: <account-id>.dkr.ecr.<region-code>.amazonaws.com/<ECR-name>
+  repo: 815919245801.dkr.ecr.eu-west-2.amazonaws.com/myapp-repo
   tag: latest
   imagePullPolicy: IfNotPresent
   ports:
