@@ -154,4 +154,5 @@ cython_debug/
 Notes for task.txt
 .terraform
 .terraform.lock.hcl
-*.terraform.tfstate.*
+*.tfstate.backup
+*.tfstate
