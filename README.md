@@ -1,8 +1,6 @@
 # DevOps Assignment
 
 This project is a part of a DevOps assignment that aims to assess your knowledge in various DevOps topics and tools. The assignment is divided into three parts, as outlined below:
-![Image task](Images/DevOpsAssignment.png)
-
 
 ## Part 1: Infrastructure Provisioning with Terraform
 - EKS (Elastic Kubernetes Service) cluster
@@ -31,4 +29,6 @@ helpful commands you will use
 - `kubectl config use-context <cluster-name>`: to point the kube to ur EKS cluster on AWS.
 
 	
-	
+
+![Image task](Images/DevOpsAssignment.png)
+
