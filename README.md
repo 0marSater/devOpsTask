@@ -1,7 +1,7 @@
 # DevOps Assignment
 
 This project is a part of a DevOps assignment that aims to assess your knowledge in various DevOps topics and tools. The assignment is divided into three parts, as outlined below:
-![Image task](https://prnt.sc/EqIBl68GBBj8)
+![Image task](Iamges/devOpsAssignment.jpg)
 
 
 ## Part 1: Infrastructure Provisioning with Terraform
