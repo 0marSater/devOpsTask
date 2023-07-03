@@ -1,23 +1,25 @@
-# devOpsTask
-This project consider as a part of devops assignment that test my knowledge in most devops topics and tools.
+# DevOps Assignment - Comprehensive Knowledge Test
 
-The assignment is divided into three parts:
--------------------------------------------
+This project is a part of a DevOps assignment that aims to assess your knowledge in various DevOps topics and tools. The assignment is divided into three parts, as outlined below:
 
-1) Create EKS, ECR, RDS with terraform
+## Part 1: Infrastructure Provisioning with Terraform
+- EKS (Elastic Kubernetes Service) cluster
+- ECR (Elastic Container Registry)
+- RDS (Relational Database Service)
 
-2) Building a simple web application and setting up CI/CD pipeline.
- - Develop a simple web application with two APIs: `http//hostname/client-ip`: Accepts client requests and saves the public IP in the RDS database.
- ,`http//hostname/client-ip/list`: Displays the list of IPs saved in the RDS database.
+## Part 2: Building a Simple Web Application and Setting up CI/CD Pipeline
 
+Here, you will develop a simple web application and establish a CI/CD pipeline for it. The web application will have the following APIs:
+
+- `http//hostname/client-ip` - Accepts client requests and saves the public IP in the RDS database.
+- `http//hostname/client-ip/list` - Displays the list of IPs saved in the RDS database.
 - Build a Docker image for the web application.
-
 - Automate the Docker image build and push process to the private ECR using scripts (in my case i did with external groovy script) 
 		-> "__build.groovy__" and "__push.groovy__".
-	
-3) Deployment with Helm Chart on AWS EKS: __AWS EKS__.
+  
+## Part 3: Deployment with Helm Chart on __AWS EKS__
    - Create a Helm chart that includes all the necessary Kubernetes resources to deploy the web application on AWS EKS.
-		-> The Helm chart can be found in the "__taskchart__" folder.
+   - The Helm chart can be found in the "__taskchart__" folder.
 
 Some notes you should consider on point 2
 --------------------------------------------
