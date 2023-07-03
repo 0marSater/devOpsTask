@@ -1,28 +1,25 @@
 # devOpsTask
-This project consider as a part of devops assignment that test my knowledge in most devops topics and daily tasks.
+This project consider as a part of devops assignment that test my knowledge in most devops topics and tools.
 
 The assignment is divided into three parts:
 -------------------------------------------
 
 1) Create EKS, ECR, RDS with terraform
-      --will be updated alter--
 
-2) Create a simple web app and its pipeline for building, pushing app on private ECR:
-- Two Apis :
+2) Building a simple web application and setting up CI/CD pipeline.
+- Develop a simple web application with two APIs
  - `http//hostname/client-ip`
-      it takes the client request public ip and saves it to RDS
- ,`http//hostname/client-ip/list` it shows the list of IPs that triggred the link.
+      - Accepts client requests and saves the public IP in the RDS database.
+ ,`http//hostname/client-ip/list` - Displays the list of IPs saved in the RDS database.
 
-- Building docker image 
+- Build a Docker image for the web application.
 
-- Pushing and automate docker iamge to ECR with script (in my case i did with external groovy script) 
+- Automate the Docker image build and push process to the private ECR using scripts (in my case i did with external groovy script) 
 		-> "__build.groovy__" and "__push.groovy__".
 	
-3) Create helm chart that will allow deploying the app with its appropriate k8s resources on __AWS EKS__.
-		-> "__taskchart__" folder.
-
-
-
+3) Deployment with Helm Chart on AWS EKS: __AWS EKS__.
+   - Create a Helm chart that includes all the necessary Kubernetes resources to deploy the web application on AWS EKS.
+		-> The Helm chart can be found in the "__taskchart__" folder.
 
 Some notes you should consider on point 2
 --------------------------------------------
