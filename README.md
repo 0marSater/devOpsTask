@@ -30,5 +30,5 @@ helpful commands you will use
 
 	
 
-![Image task](Images/DevOpsAssignment.png)
+[![Screenshot](https://image.prntscr.com/image/MVWHv6DsjHjG.png)](https://prnt.sc/MVWHv6DsjHjG)
 
