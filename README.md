@@ -1,7 +1,6 @@
 # DevOps Assignment
 
 This project is a part of a DevOps assignment that aims to assess your knowledge in various DevOps topics and tools. The assignment is divided into three parts, as outlined below:
-[![Task image](https://image.prntscr.com/image/MVWHv6DsjHjG.png)](https://prnt.sc/MVWHv6DsjHjG)
 
 ## Part 1: Infrastructure Provisioning with Terraform
 - EKS (Elastic Kubernetes Service) cluster
