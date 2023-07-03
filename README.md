@@ -7,10 +7,8 @@ The assignment is divided into three parts:
 1) Create EKS, ECR, RDS with terraform
 
 2) Building a simple web application and setting up CI/CD pipeline.
- - Develop a simple web application with two APIs
- - `http//hostname/client-ip`
-      - Accepts client requests and saves the public IP in the RDS database.
- ,`http//hostname/client-ip/list` - Displays the list of IPs saved in the RDS database.
+ - Develop a simple web application with two APIs: `http//hostname/client-ip`: Accepts client requests and saves the public IP in the RDS database.
+ ,`http//hostname/client-ip/list`: Displays the list of IPs saved in the RDS database.
 
 - Build a Docker image for the web application.
 
