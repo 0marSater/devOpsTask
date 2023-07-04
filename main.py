@@ -4,13 +4,12 @@ import os
 
 app = Flask(__name__)
 
-# Connect to the RDS MySQL database
 # Suppose you export ur environment either on Windows os or Linux.
 config = {
-    'user': 'admin',
-    'password': '321657aa',
-    'host': 'task-db.c6fja1dax0aa.eu-west-2.rds.amazonaws.com',
-    'database': 'ipAdresses'
+    'user': os.environ.get('DB_USER'),
+    'password': os.environ.get('DB_PASSWORD'),
+    'host': os.environ.get('DB_HOST'),
+    'database': os.environ.get('DB_DATABASE')
 }
 
 conn = mysql.connector.connect(**config)
