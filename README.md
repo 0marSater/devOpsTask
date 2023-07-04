@@ -48,11 +48,11 @@ The CI/CD pipeline for this project is implemented using Jenkins. It consists of
 
 Refer to the ***Jenkinsfile*** for more details about the CI/CD pipeline stages.
 
-## Deploy web app using helm chart to EKS 
+## Deploy web app on EKS using Helm chart 
 - After filling both groovy files with ( `db_instance_address` and `repository_url` ) values.
 - Run `helm install myapp` ***./taskchart`*** and that will deploy the app and its related resource on __EKS__.
 
-For more information about the resources used, please refer to the README file inside the `taskchart` folder.
+For more information about the resources used, please refer to the README file inside the ___taskchart___ folder.
 
 #To access the web app: 
 ------------------------
