@@ -12,15 +12,15 @@ This project is a part of a DevOps assignment that aims to assess your knowledge
 
 Here, you will develop a simple web application and establish a CI/CD pipeline for it. The web application will have the following APIs:
 
-- `http//hostname/client-ip` - Accepts client requests and saves the public IP in the RDS database.
-- `http//hostname/client-ip/list` - Displays the list of IPs saved in the RDS database.
+- ***http//hostname/client-ip*** - Accepts client requests and saves the public IP in the RDS database.
+- ***http//hostname/client-ip/list*** - Displays the list of IPs saved in the RDS database.
 - Build a Docker image for the web application.
-- Automate the Docker image build and push process to the private ECR using scripts (in my case i did with external groovy script) 
+- Automate the Docker image build and push process to the private ECR using scripts (in my case i did with two external groovy scripts) 
 		-> "__build.groovy__" and "__push.groovy__".
   
 ## Part 3: Deployment with Helm Chart on __AWS EKS__
-   - Create a Helm chart that includes all the necessary Kubernetes resources to deploy the web application on AWS EKS.
-   - The Helm chart can be found in the __taskchart__ folder.
+   - Create a Helm chart that includes all the necessary k8s resources to deploy the web application on AWS EKS.
+   - The Helm chart can be found in the ***taskchart*** folder.
 
 -----------------------------------------------------------------------------------------------------------------------
 
@@ -32,9 +32,9 @@ For first part This repository contains the necessary resources for provisioning
 1. Navigate to the ***terraform*** folder.
 2. Run `terraform init` to initialize all modules and providers.
 3. Use `terraform apply --auto-approve` to create the entire infrastructure.
-4. Once the infrastructure is created, two outputs will be displayed on your screen: `db_instance_address` and `repository_url`.
+4. Once the infrastructure is created, two outputs will be displayed on your screen: ***db_instance_address*** and ***repository_url***.
  Copy these values and paste them in the appropriate locations in the build.groovy and push.groovy files.
- and in __`main.py`__ file you will pasat `db_instance_address` to enable your app to connect to the database.
+ and in ***main.py*** file you will pasat ***db_instance_address*** to enable your app to connect to the database.
 
 For more information about the resources used, please refer to the README file inside the ***terraform*** folder.
 
@@ -55,8 +55,8 @@ Refer to the ***Jenkinsfile*** for more details about the CI/CD pipeline stages.
 
 
 ## Deploy web app on EKS using Helm chart 
-- After filling both groovy files with ( `db_instance_address` and `repository_url` ) values.
-- Run `helm install myapp` ***./taskchart`*** and that will deploy the app and its related resource on __EKS__.
+- After filling both groovy files with ( ***db_instance_address*** and ***repository_url*** ) values.
+- Run `helm install myapp` ***./taskchart`*** and that will deploy the app and its related resource on ***EKS***.
 
 For more information about the resources used, please refer to the README file inside the ***taskchart*** folder.
 
