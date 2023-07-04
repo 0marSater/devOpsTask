@@ -36,7 +36,14 @@ For more information about the resources used, please refer to the README file i
 # Web App Development with Flask and Docker
 
 - I have developed a simple web app with two APIs (client-ip, client-ip) using __FLASK__
-- i've created __Dockerfile__ with all ncessery instructions to build a __docker image__, then i set up my CI/CD pipeline using __Jenkinsfile__ which contain __3__ stages, first one for cloning project repo into my jenkins pipeline, second one for buliiding docker image and i have used inside this stage an external groovy script (__build.groovy__) that contain all instruction to build __docker image__, final step is to pushing __docker image__ to an private repo using another external groovy script (__push.groovy__) to automate the process of building __docker image__ and pushing the image to private __ECR__ repository
+
+The CI/CD pipeline for this project is implemented using Jenkins. It consists of three stages:
+
+1. **Clone Repository:** Clone the project repository into the Jenkins pipeline workspace.
+2. **Build Docker Image:** Build the Docker image using the `build.groovy` script.
+3. **Push Docker Image:** Push the Docker image to a private ECR repository using the `push.groovy` script.
+
+Refer to the `Jenkinsfile` for more details about the CI/CD pipeline stages.
 
 ## Building the Docker Image
 
