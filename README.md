@@ -23,6 +23,8 @@ Here, you will develop a simple web application and establish a CI/CD pipeline f
    - The Helm chart can be found in the __taskchart__ folder.
 
 -----------------------------------------------------------------------------------------------------------------------
+
+
 For first part This repository contains the necessary resources for provisioning the infrastructure using Terraform. 
 
 ## Getting Started
@@ -36,6 +38,8 @@ For first part This repository contains the necessary resources for provisioning
 
 For more information about the resources used, please refer to the README file inside the ***terraform*** folder.
 
+
+
 # Web App Development with Flask and Docker
 
 - I have developed a simple web app with two APIs ***(client-ip, client-ip)*** using __FLASK__.
@@ -48,11 +52,14 @@ The CI/CD pipeline for this project is implemented using Jenkins. It consists of
 
 Refer to the ***Jenkinsfile*** for more details about the CI/CD pipeline stages.
 
+
+
 ## Deploy web app on EKS using Helm chart 
 - After filling both groovy files with ( `db_instance_address` and `repository_url` ) values.
 - Run `helm install myapp` ***./taskchart`*** and that will deploy the app and its related resource on __EKS__.
 
-For more information about the resources used, please refer to the README file inside the ___taskchart___ folder.
+For more information about the resources used, please refer to the README file inside the ***taskchart*** folder.
+
 
 #To access the web app: 
 ------------------------
@@ -60,6 +67,7 @@ For more information about the resources used, please refer to the README file i
 2. Locate the IP address in the output and navigate to that IP in your web browser.
 
 -----------------------------------------------------------------------------------------------------------
+
 
 #Cleaning up all works
 ---------------------
