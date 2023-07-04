@@ -38,7 +38,7 @@ For more information about the resources used, please refer to the README file i
 
 # Web App Development with Flask and Docker
 
-- I have developed a simple web app with two APIs (client-ip, client-ip) using __FLASK__
+- I have developed a simple web app with two APIs (client-ip, client-ip) using __FLASK__.
 
 The CI/CD pipeline for this project is implemented using Jenkins. It consists of three stages:
 
@@ -50,14 +50,14 @@ Refer to the `Jenkinsfile` for more details about the CI/CD pipeline stages.
 
 ## Deploy web app using helm chart to EKS 
 - After filling both groovy files with ( `db_instance_address` and `repository_url` ) values.
-- Run `helm install myapp ./taskchart` and that will deploy the app and its related resource on __EKS__  
+- Run `helm install myapp ./taskchart` and that will deploy the app and its related resource on __EKS__.
 
 For more information about the resources used, please refer to the README file inside the `taskchart` folder.
 
 #To access the web app: 
 ------------------------
 
-1 - Run 'kubectl get ingress'
+1 - Run `kubectl get ingress`.
 2 - Locate the IP address in the output and navigate to that IP in your web browser.
 
 -----------------------------------------------------------------------------------------------------------
