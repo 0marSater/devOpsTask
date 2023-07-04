@@ -30,7 +30,9 @@ For first part This repository contains the necessary resources for provisioning
 1. Navigate to the `terraform` folder.
 2. Run `terraform init` to initialize all modules and providers.
 3. Use `terraform apply --auto-approve` to create the entire infrastructure.
+4. Once the infrastructure is created, two outputs will be displayed on your screen: db_instance_address and repository_url.
 
+Copy these values and paste them in the appropriate locations in the build.groovy and push.groovy files.
 For more information about the resources used, please refer to the README file inside the `terraform` folder.
 
 # Web App Development with Flask and Docker
@@ -45,7 +47,7 @@ The CI/CD pipeline for this project is implemented using Jenkins. It consists of
 
 Refer to the `Jenkinsfile` for more details about the CI/CD pipeline stages.
 
-## Building the Docker Image
+##
 
 
 
