@@ -76,7 +76,7 @@ For more information about the resources used, please refer to the README file i
 2. Run `terraform destroy --auto-approve` to destroy and clean up all resource.
 
 #Helpful commands you will use 
------------------------------
+-------------------------------
 - `AWS congiure`: remotly connect to ur aws account with AWS_ACCESS_KEY_ID, AWS_SECRET_KEY_ID, and region.
 
 
