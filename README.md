@@ -69,13 +69,15 @@ Refer to the ***Jenkinsfile*** for more details about the CI/CD pipeline stages.
 
 #Cleaning up all works
 ---------------------
-
-1. Navigate to the ***terraform*** folder.
-2. Run `terraform destroy --auto-approve` to destroy and clean up all resource.
+1. `helm uninstall myapp` 
+2. Navigate to the ***terraform*** folder.
+3. Run `terraform destroy --auto-approve` to destroy and clean up all resource.
 
 #Helpful commands you will use 
 -------------------------------
-- `AWS congiure`: remotly connect to ur aws account with AWS_ACCESS_KEY_ID, AWS_SECRET_KEY_ID, and region.
+- `aws congiure`: remotly connect to ur aws account with AWS_ACCESS_KEY_ID, AWS_SECRET_KEY_ID, and region.
+- `aws eks update-kubeconfig --region <REGION> --name <EKS_NAME>`: to update .kubeconfig in ur host with the created one on eks.
+- `kubectl config use-context <CONTEXT_NAME>`: to point and use the created eks cluster.
 
 
 	
