@@ -55,11 +55,16 @@ Refer to the `Jenkinsfile` for more details about the CI/CD pipeline stages.
 For more information about the resources used, please refer to the README file inside the `taskchart` folder.
 
 #To access the web app: 
+------------------------
+
 1 - Run 'kubectl get ingress'
 2 - Locate the IP address in the output and navigate to that IP in your web browser.
+
 -----------------------------------------------------------------------------------------------------------
-# Cleaning up all works
+
+#Cleaning up all works
 ---------------------
+
 1. Navigate to the `terraform` folder.
 2. Run `terraform destroy --auto-approve` to initialize all modules and providers.
 
