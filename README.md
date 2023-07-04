@@ -57,8 +57,8 @@ For more information about the resources used, please refer to the README file i
 #To access the web app: 
 ------------------------
 
-1 - Run `kubectl get ingress`.
-2 - Locate the IP address in the output and navigate to that IP in your web browser.
+1. Run `kubectl get ingress`.
+2. Locate the IP address in the output and navigate to that IP in your web browser.
 
 -----------------------------------------------------------------------------------------------------------
 
