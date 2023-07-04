@@ -1,5 +1,4 @@
 
-This Terraform project provides infrastructure provisioning using modularized components. It includes modules for VPC, EKS, RDS, ECR, and ALB, each having their respective subfolders containing the main configuration files, variables, and outputs.
 
 ## Project Structure
 
