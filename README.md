@@ -73,11 +73,11 @@ For more information about the resources used, please refer to the README file i
 ---------------------
 
 1. Navigate to the ***terraform*** folder.
-2. Run `terraform destroy --auto-approve` to initialize all modules and providers.
+2. Run `terraform destroy --auto-approve` to destroy and clean up all resource.
 
 helpful commands you will use 
 -----------------------------
-- `AWS congiure`: remotly connect to ur aws account with AWS_ACCESS_KEY_ID, AWS_SECRET_KEY_ID, and region
+- `AWS congiure`: remotly connect to ur aws account with AWS_ACCESS_KEY_ID, AWS_SECRET_KEY_ID, and region.
 
 
 	
