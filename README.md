@@ -58,8 +58,6 @@ Refer to the ***Jenkinsfile*** for more details about the CI/CD pipeline stages.
 - After filling both groovy files with ( ***db_instance_address*** and ***repository_url*** ) values.
 - Run `helm install myapp` ***./taskchart`*** and that will deploy the app and its related resource on ***EKS***.
 
-For more information about the resources used, please refer to the README file inside the ***taskchart*** folder.
-
 
 #To access the web app: 
 ------------------------
