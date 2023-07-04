@@ -27,30 +27,30 @@ For first part This repository contains the necessary resources for provisioning
 
 ## Getting Started
 
-1. Navigate to the `terraform` folder.
+1. Navigate to the ***terraform*** folder.
 2. Run `terraform init` to initialize all modules and providers.
 3. Use `terraform apply --auto-approve` to create the entire infrastructure.
 4. Once the infrastructure is created, two outputs will be displayed on your screen: `db_instance_address` and `repository_url`.
  Copy these values and paste them in the appropriate locations in the build.groovy and push.groovy files.
  and in __`main.py`__ file you will pasat `db_instance_address` to enable your app to connect to the database.
 
-For more information about the resources used, please refer to the README file inside the `terraform` folder.
+For more information about the resources used, please refer to the README file inside the ***terraform*** folder.
 
 # Web App Development with Flask and Docker
 
-- I have developed a simple web app with two APIs (client-ip, client-ip) using __FLASK__.
+- I have developed a simple web app with two APIs ***(client-ip, client-ip)*** using __FLASK__.
 
 The CI/CD pipeline for this project is implemented using Jenkins. It consists of three stages:
 
 1. **Clone Repository:** Clone the project repository into the Jenkins pipeline workspace.
-2. **Build Image:** Build the Docker image using the `build.groovy` script.
-3. **Push to ECR:** Push the Docker image to a private ECR repository using the `push.groovy` script.
+2. **Build Image:** Build the Docker image using the ***build.groovy*** script.
+3. **Push to ECR:** Push the Docker image to a private ECR repository using the ***push.groovy*** script.
 
-Refer to the `Jenkinsfile` for more details about the CI/CD pipeline stages.
+Refer to the ***Jenkinsfile*** for more details about the CI/CD pipeline stages.
 
 ## Deploy web app using helm chart to EKS 
 - After filling both groovy files with ( `db_instance_address` and `repository_url` ) values.
-- Run `helm install myapp ./taskchart` and that will deploy the app and its related resource on __EKS__.
+- Run `helm install myapp` ***./taskchart`*** and that will deploy the app and its related resource on __EKS__.
 
 For more information about the resources used, please refer to the README file inside the `taskchart` folder.
 
@@ -64,7 +64,7 @@ For more information about the resources used, please refer to the README file i
 #Cleaning up all works
 ---------------------
 
-1. Navigate to the `terraform` folder.
+1. Navigate to the ***terraform*** folder.
 2. Run `terraform destroy --auto-approve` to initialize all modules and providers.
 
 helpful commands you will use 
