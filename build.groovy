@@ -3,4 +3,5 @@ def buildDockerImage() {
     sh "cd ${WORKSPACE} && docker build -t $IMAGE_NAME ."
 }
 
+
 return this
