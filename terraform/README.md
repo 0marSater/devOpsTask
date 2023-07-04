@@ -1,4 +1,3 @@
-![project structure](https://github.com/0marSater/devOpsTask/assets/111258496/23f1c9d8-c811-4b21-b82b-d250c74b43c3)# Terraform Project
 
 This Terraform project provides infrastructure provisioning using modularized components. It includes modules for VPC, EKS, RDS, ECR, and ALB, each having their respective subfolders containing the main configuration files, variables, and outputs.
 
