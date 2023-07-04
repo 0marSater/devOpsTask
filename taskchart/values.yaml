@@ -6,7 +6,8 @@ replicaCount: 1
 
 #Image info
 image:
-  repo: 815919245801.dkr.ecr.eu-west-2.amazonaws.com/task-repo
+  # replace <account-id> with your account id, <region> with your region and <repo-name> with your repository name.
+  repo: <account-id>.dkr.ecr.<region>.amazonaws.com/<repo-name>
   tag: latest
   imagePullPolicy: IfNotPresent
   ports:
