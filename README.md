@@ -50,6 +50,8 @@ The CI/CD pipeline for this project is implemented using Jenkins. It consists of
 2. **Build Image:** Build the Docker image using the ***build.groovy*** script.
 3. **Push to ECR:** Push the Docker image to a private ECR repository using the ***push.groovy*** script.
 
+***NOTE: you should install AWS ECR and Docker plugins on Jnekins*** 
+
 Refer to the ***Jenkinsfile*** for more details about the CI/CD pipeline stages.
 
 
