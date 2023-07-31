@@ -36,7 +36,7 @@ For first part This repository contains the necessary resources for provisioning
  Copy these values and paste them in the appropriate locations in the build.groovy and push.groovy files.
  and in ***main.py*** file you will paste ***db_instance_address*** to enable your app to connect to the database.
 
-For more information about the resources used, please refer to the README file inside the ***terraform*** folder.
+> For more information about the resources used, please refer to the README file inside the ***terraform*** folder.
 
 
 
