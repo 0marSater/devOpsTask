@@ -52,7 +52,7 @@ The CI/CD pipeline for this project is implemented using Jenkins. It consists of
 
 ***NOTE: you should install AWS ECR and Docker plugins on Jnekins*** 
 
-Refer to the ***Jenkinsfile*** for more details about the CI/CD pipeline stages.
+Refer to the ***Jenkinsfile*** inside Jenkins folder for more details about the CI/CD pipeline stages.
 
 
 
